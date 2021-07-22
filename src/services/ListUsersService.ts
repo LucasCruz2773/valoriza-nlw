@@ -8,6 +8,7 @@ class ListUsersService {
 
         const users = await usersRepositories.find();
 
+        // classToPlain() para usar definições do class-transformer na entidade
         return classToPlain(users);
     }
 }

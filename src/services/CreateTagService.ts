@@ -17,6 +17,7 @@ class CreateTagService {
             name
         });
 
+        // Se a tag já existir, retorna erro
         if(tagAlreadyExists){
             throw new Error("Tag already exists!");
         }

@@ -8,6 +8,7 @@ class ListTagsService {
         
         const tags = tagsRepositories.find();
 
+        // classToPlain() para usar definições do class-transformer na entidade
         return classToPlain(tags);
     }
 }

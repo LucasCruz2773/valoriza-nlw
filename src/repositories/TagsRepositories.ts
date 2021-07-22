@@ -1,3 +1,4 @@
+// Repositório da entidade Tag, estende Repository
 import { EntityRepository, Repository } from 'typeorm'
 import { Tag } from '../entities/Tag';
 

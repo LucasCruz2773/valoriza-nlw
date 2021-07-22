@@ -4,6 +4,7 @@ import { ListUserReceiveComplimentsService } from "../services/ListUserReceiveCo
 
 class ListUserReceiveComplimentsController {
     async handle(request: Request, response: Response) {
+        // Pega a informação desestruturada, ou seja, request.user_id
         const { user_id } = request;
 
         const listUserReceiveComplimentsService = new ListUserReceiveComplimentsService();

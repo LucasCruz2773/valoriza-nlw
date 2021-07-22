@@ -1,3 +1,4 @@
+// Importações
 import { Router } from "express";
 import { CreateUserController } from "./controllers/CreateUserController";
 import { CreateTagController  } from "./controllers/CreateTagController";
@@ -10,8 +11,10 @@ import { ListUserSendComplimentsController } from "./controllers/ListUserSendCom
 import { ListTagsController } from "./controllers/ListTagsController";
 import { ListUsersController } from "./controllers/ListUsersController";
 
+// Instanciação do Router
 const router = Router();
 
+// Instanciação dos Controllers
 const createUserController = new CreateUserController();
 const createTagController = new CreateTagController();
 const authenticateUserController = new AuthenticateUserController();
@@ -22,6 +25,7 @@ const listUserReceiveComplimentsController = new ListUserReceiveComplimentsContr
 const listTagsController = new ListTagsController();
 const listUsersController = new ListUsersController();
 
+// Criação das rotas com seus devidos Middlewares
 router.post("/users", createUserController.handle);
 router.get("/users", ensureAuthenticated, listUsersController.handle);
 

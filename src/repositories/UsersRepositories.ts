@@ -1,3 +1,4 @@
+// Repositório da entidade User, estende Repository
 import { Entity, EntityRepository, Repository } from 'typeorm'
 import { User } from '../entities/User';
 

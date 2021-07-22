@@ -1,3 +1,4 @@
+// Repositório da entidade Compliment, estende Repository
 import { Repository, EntityRepository } from 'typeorm';
 import { Compliment } from '../entities/Compliment';
 
